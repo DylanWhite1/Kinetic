@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+<!-- 'New playlist window' view -->
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="kinetic.PlayListCtrl" 
+    minWidth="-Infinity" hgap="10" vgap="4" alignment="TOP_CENTER"> 
+    
+    <!-- insets -->
+    <padding><Insets top="0" right="25" bottom="10" left="25"/></padding>
+    
+    <!-- title -->
+    <Separator orientation="HORIZONTAL" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    <Label text="Set Playlist Name" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    
+    <!-- New playlist name textfield -->
+    <Separator orientation="HORIZONTAL" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    <Label text="New playlist name: " GridPane.rowIndex="4" GridPane.columnIndex="0" />
+    <TextField fx:id="playListName" minWidth="100" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+    
+    <!-- Set button -->
+    <Separator orientation="HORIZONTAL" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    <Label fx:id="playListNameStatus" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <Button fx:id="setBt" text="Set" GridPane.rowIndex="6" GridPane.columnIndex="2" onAction="#setPlayListName"/>
+    <Separator orientation="HORIZONTAL" GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    
+    <!-- constraints -->
+    <columnConstraints>
+        <ColumnConstraints minWidth="100" halignment="LEFT" />
+        <ColumnConstraints minWidth="100" halignment="LEFT" />
+        <ColumnConstraints minWidth="50" halignment="RIGHT" />
+    </columnConstraints> 
+    
+    <!-- css URL -->
+    <stylesheets>
+        <URL value="@../styles/windows.css" />
+    </stylesheets> 
+    
+</GridPane>

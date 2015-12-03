@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+
+<!-- 'About window' view -->
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="kinetic.AboutCtrl" 
+    minWidth="-Infinity" hgap="10" vgap="4" alignment="TOP_CENTER"> 
+    
+    <!-- Insets -->
+    <padding><Insets top="0" right="25" bottom="10" left="25"/></padding>
+    
+    <!-- Header -->
+    <Separator orientation="HORIZONTAL" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+
+    <ToggleButton id="kineticHeader" minWidth="250" minHeight="63" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
+    <!-- 'About window' text -->
+    <Separator orientation="HORIZONTAL" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+
+    <Label fx:id="aboutText" id="aboutText" GridPane.rowIndex="4" GridPane.columnIndex="0" 
+     GridPane.columnSpan="3" minHeight="200" wrapText="true"   /> 
+      
+    <Separator orientation="HORIZONTAL" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    
+    <!-- constraints -->
+    <columnConstraints>
+        
+        <ColumnConstraints minWidth="450" halignment="LEFT" />  
+              
+    </columnConstraints>
+    
+    <!-- css URL --> 
+    <stylesheets>
+        
+        <URL value="@../styles/windows.css" />
+        
+    </stylesheets>
+     
+</GridPane>

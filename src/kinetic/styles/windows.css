@@ -1,0 +1,31 @@
+.root {
+    -fx-background-color: #000000;
+}
+
+/* label colour and size */
+.label {
+    -fx-text-fill: #ff7e00;
+    -fx-font-size: 15;      
+}
+
+/* window button colour and size */
+.button {
+    -fx-background-color: #ff7e00;
+    -fx-font-size: 15; 
+    -fx-text-fill: #000000;
+}
+
+.button:hover {
+    -fx-background-color: #444342;
+    -fx-font-size: 15; 
+    -fx-text-fill: #ff7e00;
+}
+
+/* header logo */
+#kineticHeader {
+    -fx-background-image: url("../images/kinetic.jpg");
+    -fx-background-color: #000000;    
+}
+#aboutText {
+    -fx-text-alignment: justify;
+}

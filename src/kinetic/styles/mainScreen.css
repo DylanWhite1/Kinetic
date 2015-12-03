@@ -1,0 +1,191 @@
+/* all buttons */
+.button {
+    -fx-font-weight: bold;
+}
+
+/* main logo */
+#kineticHeader {
+    -fx-background-image: url("../images/kinetic.jpg");
+    -fx-background-color: #000000;    
+}
+
+/* play togglebutton */
+#kineticPlay {
+    -fx-background-image: url("../images/play.jpg");
+}
+
+#kineticPlay:hover {
+    -fx-background-image: url("../images/play_hover.jpg");
+}
+
+/* pause togglebutton */
+#kineticPause {
+    -fx-background-image: url("../images/pause.jpg");
+}
+
+#kineticPause:hover {
+    -fx-background-image: url("../images/pause_hover.jpg");
+}
+
+/* stop togglebutton */
+#kineticStop {
+    -fx-background-image: url("../images/stop.jpg");
+}
+
+#kineticStop:hover {
+    -fx-background-image: url("../images/stop_hover.jpg");
+}
+
+/* sliderbar */
+/* slider - background */
+.slider {
+    -fx-background-color: #000000;    
+}
+
+/* progressbar - background */
+.progress-bar .track {
+  -fx-text-box-border: #000000;
+  -fx-control-inner-background: #000000;  
+  -fx-background-radius: 0;
+}
+
+/* progressbar - bar */
+.progress-bar .bar {
+    -fx-background-color: #ff7e00;    
+}
+
+/* progressbar - kill border background */
+.progress-bar {
+    -fx-background-color: #000000;    
+}
+
+/* menu main background */
+.menu-bar {
+    -fx-background-color: #000000;    
+}
+
+/* menu main labels */
+.menu-bar .label {
+    -fx-text-fill: #ff7e00;
+}
+
+/* menu main labels on hover */
+.menu-bar .label:hover {
+    -fx-text-fill: #ffffff;
+}
+
+/* menu dropdown active - background menu reset */
+.menu:showing {
+    -fx-background-color: #000000;    
+}
+
+/* menu label background reset */
+.menu:hover {
+    -fx-background-color: #000000;    
+}
+
+/* menu dropdown background */
+.menu-item {
+    -fx-background-color: #ffffff;  
+}
+
+/* menu dropdown labels (hover) */
+.menu-item:hover .label {
+    -fx-text-fill: #ff7e00;
+    -fx-background-color: #fff4e9;
+}
+/* menu dropdown labels */
+.menu-item .label {
+    -fx-text-fill: #000000;
+}
+
+/* tableview background/border */
+.table-view {
+    -fx-base: #000000;
+    -fx-control-inner-background: #000000;
+    -fx-background-color: #000000;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+    -fx-background-color: #000000;
+}
+
+/* tableview header */
+.table-view .column-header-background {
+    -fx-background-color: #000000;
+}
+
+/* tableview header column text */
+.table-view .column-header .label {
+    -fx-text-fill: #ff7e00;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+/* tableview cells */
+.table-row-cell:even {
+    -fx-background-color: #000000;
+    -fx-text-background-color: #ffffff;
+}
+
+.table-row-cell:focused:even, .table-row-cell:focused:odd {
+    -fx-background-color: #fff4e9;
+    -fx-text-background-color: #000000;
+}
+
+.table-row-cell:selected:even, .table-row-cell:selected:odd {
+    -fx-background-color: #fff4e9;
+    -fx-text-background-color: #000000;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #444342;
+    -fx-text-background-color: #ffffff;
+}
+
+/* timer label and background */
+#timer {
+    -fx-font-size: 20;
+    -fx-background-color: #ff7e00;
+    -fx-text-fill: #000000;
+    -fx-padding-left: 5;
+}
+
+/* individual treeview items */
+.tree-cell {
+    -fx-font-size: 12;  
+    -fx-background-color: #000000;
+    -fx-text-fill: #ff7e00;
+    -fx-border-color: #000000;
+}
+
+/* treeview items when selected */
+.tree-cell:selected {
+    -fx-font-size: 12;  
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}
+
+/* treeview area background */
+.tree-view {
+    -fx-background-color: #000000;
+}
+
+/* seperators - in context menu */
+.separator {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 2;
+}
+
+/* bottom panel*/
+#bottom {
+    -fx-background-color: #ff7e00;
+    -fx-font-size: 12;  
+}
+
+/* song label - bottom */
+#songLabel {
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+

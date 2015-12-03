@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+
+<!-- 'Main window' view -->
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="kinetic.MainScreenCtrl" 
+    minWidth="-Infinity"> 
+    
+    <!-- Top section -->
+    <top>
+        
+        <!-- Main horizontal menu -->
+        <MenuBar fx:id="menuBar" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3">
+            <menus>
+                
+                <Menu text="File">
+                    <items>
+                        
+                        <MenuItem text="Import tunes" onAction="#importTrack" />
+                        <MenuItem text="Import albums" onAction="#importAlbum" />
+                        <MenuItem text="Exit" onAction="#exit" />
+                        
+                    </items>
+                </Menu>
+                
+                <Menu text="Help">
+                    <items>
+                        
+                        <MenuItem text="About" onAction="#startAbout" /> 
+                                               
+                    </items>
+                </Menu>
+                        
+            </menus>
+        </MenuBar>
+        
+    </top>
+    
+    <!-- Left section -->
+    <left>
+        
+        <VBox> 
+            
+            <!-- Play, pause and stop toggle buttons -->
+            <ToggleButton id="kineticHeader" minWidth="250" minHeight="63" />
+            <ToggleButton fx:id="playBt" id="kineticPlay" minWidth="250" minHeight="63"/> 
+            <ToggleButton fx:id="pauseBt" id="kineticPause" minWidth="250" minHeight="63"/> 
+            <ToggleButton fx:id="stopBt" id="kineticStop" minWidth="250" minHeight="63"/> 
+            
+            <!-- slider bar -->
+            <Slider fx:id="slider" minWidth="250" minHeight="40" /> 
+            <ProgressBar fx:id="progressBar" minWidth="250" minHeight="40" />  
+            
+            <!-- timer -->
+            <Label fx:id="currentTime" id="timer" minHeight="40" minWidth="250" BorderPane.alignment="CENTER"/>
+            
+            <!-- library treeview -->
+            <TreeView editable="true" minWidth="250" fx:id="treeview" /> 
+              
+        </VBox>
+          
+    </left>
+    
+    <!-- Central section -->
+    <center>
+        
+        <!-- Track tableview -->
+        <TableView BorderPane.alignment="TOP_CENTER" fx:id="tableview">            
+            <columns>
+                
+                <TableColumn text="Track" fx:id="trackTc" maxWidth="60">
+                </TableColumn>
+                
+                <TableColumn text="Artist" fx:id="artistTc" minWidth="200">
+                </TableColumn>
+                
+                <TableColumn text="Title" fx:id="titleTc" minWidth="200">
+                </TableColumn>
+                
+                <TableColumn text="Album" fx:id="albumTc" minWidth="200">
+                </TableColumn>
+                
+                <TableColumn text="Year" fx:id="yearTc" maxWidth="60">
+                </TableColumn>
+                
+                <TableColumn text="Genre" fx:id="genreTc" minWidth="150">
+                </TableColumn>
+                
+                <TableColumn visible="hidden" text="Id" fx:id="idTc">
+                </TableColumn>
+                
+            </columns>
+        </TableView> 
+               
+    </center>
+    
+    <!--Bottom section -->
+    <bottom>
+        
+        <!-- Current song label -->
+        <HBox alignment="CENTER" id="bottom" minHeight="70" > 
+                  
+            <Label fx:id="songLabel" id="songLabel" />  
+                  
+        </HBox>
+                
+    </bottom>
+    
+    <!-- css URL --> 
+    <stylesheets>
+        
+        <URL value="@../styles/mainScreen.css" />
+        
+    </stylesheets>
+    
+</BorderPane>
