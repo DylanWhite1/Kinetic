@@ -23,6 +23,8 @@ import org.apache.commons.io.FileUtils;
  * mp3 and imports to .Kinetic/tracks directory using Apache Commons FileUtils library.
  * Also, uses mp3agic library to verify file is mp3.
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class Import {

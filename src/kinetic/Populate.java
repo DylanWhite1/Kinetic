@@ -27,6 +27,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
  * 
  * Accessed in Files, Library, and MainScreenCtrl by composition
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class Populate {

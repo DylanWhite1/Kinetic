@@ -8,6 +8,8 @@ package kinetic;
  * 
  * Objective: JavaBeans model class to set and return instances of Track
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class Track implements java.io.Serializable {

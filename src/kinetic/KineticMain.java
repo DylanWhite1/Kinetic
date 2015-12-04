@@ -26,11 +26,13 @@ import javafx.scene.image.Image;
 /**
  * 
  * @author Dylan White
- 
- Class: KineticMain extends Application
- 
- Objective: Initiates JavaFX, using mainScreen.fxml as view, and 
- mainScreen.css for styles.
+ *
+ *  Class: KineticMain extends Application
+ *
+ *  Objective: Initiates JavaFX, using mainScreen.fxml as view, and 
+ *  mainScreen.css for styles.
+ * 
+ * Copyright 2015 Dylan White (GPL)
  * 
  */
 

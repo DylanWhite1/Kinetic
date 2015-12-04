@@ -14,7 +14,9 @@ import javafx.scene.control.TextField;
  * Class: PlayListCtrl controller
  * 
  * Objective: Controller class for newPlaylist. Sets playListName field as result from
- * user input and creates new directory in .Kinetic/playlists, by that name. * 
+ * user input and creates new directory in .Kinetic/playlists, by that name. 
+ * 
+ * Copyright 2015 Dylan White (GPL)
  * 
  */
 

@@ -10,6 +10,8 @@ import javafx.scene.control.ToggleButton;
  * 
  * Objective: JavaBeans model class to set and return instances of JavaFX ToggleButton
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class Buttons implements java.io.Serializable {

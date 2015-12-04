@@ -6,6 +6,18 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
+/**
+ *
+ * @author Dylan White
+ * 
+ * Class: AboutCtrl
+ * 
+ * Objective: set text for about window.
+ * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
+ */
+
 public class AboutCtrl implements Initializable {
     
     @FXML private Label aboutText;

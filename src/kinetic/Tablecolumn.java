@@ -10,6 +10,8 @@ import javafx.scene.control.TableColumn;
  * 
  * Objective: JavaBeans model class to set and return instances of JavaFX TableColumn
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class Tablecolumn {

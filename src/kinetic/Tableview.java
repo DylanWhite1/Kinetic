@@ -8,6 +8,8 @@ package kinetic;
  * 
  * Objective: JavaBeans model class to set and return instance of JavaFX TableView
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 import javafx.scene.control.TableView;

@@ -9,6 +9,8 @@ package kinetic;
  * Objective: Singleton class to return instance of TableColumns so that they can be 
  * accessed globally.
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class TableColumnInstance {

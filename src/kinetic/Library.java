@@ -33,6 +33,8 @@ import org.apache.commons.io.FileUtils;
  * Objective: Responsible for loading treeview (library) items to the main screen 
  * and listens to and handles relevant events. 
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class Library {

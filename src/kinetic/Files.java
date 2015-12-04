@@ -11,6 +11,8 @@ import java.io.File;
  * Objective: Provides getter / setter methods for specific files used across the
  * application. The Files class is accessed via composition.
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class Files {

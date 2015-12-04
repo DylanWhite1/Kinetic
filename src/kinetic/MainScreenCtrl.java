@@ -27,6 +27,8 @@ import javafx.stage.Stage;
 * 
 *  Objective: Main controller class for the main screen. 
 * 
+* Copyright 2015 Dylan White (GPL)
+* 
 */
 
 public class MainScreenCtrl implements Initializable {

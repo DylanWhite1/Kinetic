@@ -9,6 +9,8 @@ package kinetic;
  * Objective: Singleton class to return instance of Library so it they can be 
  * accessed globally.
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class LibraryInstance {

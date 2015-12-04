@@ -47,6 +47,8 @@ import org.apache.commons.io.FileUtils;
  * pause and stop button events, sets context menu for tableview, and provides
  * slider / progressbar functionality. Accessed by composition in other classes.
  * 
+ * Copyright 2015 Dylan White (GPL)
+ * 
  */
 
 public class PlayBack {
