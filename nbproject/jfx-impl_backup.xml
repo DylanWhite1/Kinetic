@@ -2768,6 +2768,7 @@
             <antcall target="-pre-jfx-deploy"/>
             <echo message="Warning: JVM Arguments and Callbacks (if any) not passed to &lt;fx:deploy&gt; in fallback build mode due to JDK missing JavaScript support."/>
             <fx:deploy width="${javafx.width}" height="${javafx.height}"
+                      
                       outdir="${jfx.deployment.dir}" embedjnlp="true" updatemode="${update-mode}"
                       outfile="${application.title}" includeDT="${javafx.deploy.includeDT}">
                 <fx:application refid="fxApp"/>
@@ -2788,6 +2789,7 @@
             <echo message="Warning: JVM Arguments and Callbacks (if any) not passed to &lt;fx:deploy&gt; in fallback build mode due to JDK missing JavaScript support."/>
             <deploy-process-template/>
             <fx:deploy width="${javafx.width}" height="${javafx.height}"
+                        
                       outdir="${jfx.deployment.dir}" embedjnlp="true" updatemode="${update-mode}"
                       outfile="${application.title}" includeDT="${javafx.deploy.includeDT}">
                 <fx:application refid="fxApp"/>
