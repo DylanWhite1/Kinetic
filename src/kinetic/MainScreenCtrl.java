@@ -3,6 +3,7 @@ package kinetic;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.concurrent.Task;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -90,8 +91,20 @@ public class MainScreenCtrl implements Initializable {
         //  loads library treeview and listens for events       
         library.loadLibrary(treeview, slider, currentTime, songLabel); 
         
-        //  populate tableview with new Track instances        
-        populate.populateTable(files.getTracksDir().getPath());
+        //  data-intensive - set to different thread
+        Task <Void> task = new Task<Void>(){ 
+            
+            @Override
+            public Void call() {
+                //  populate tableview with new Track instances        
+                populate.populateTable(files.getTracksDir().getPath());
+                return null;
+            }
+            
+        };
+        //  start new thread
+        new Thread(task).start();
+        
     } 
     
     /**
