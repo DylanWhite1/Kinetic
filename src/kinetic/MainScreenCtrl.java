@@ -91,19 +91,9 @@ public class MainScreenCtrl implements Initializable {
         //  loads library treeview and listens for events       
         library.loadLibrary(treeview, slider, currentTime, songLabel); 
         
-        //  data-intensive - set to different thread
-        Task <Void> task = new Task<Void>(){ 
-            
-            @Override
-            public Void call() {
-                //  populate tableview with new Track instances        
-                populate.populateTable(files.getTracksDir().getPath());
-                return null;
-            }
-            
-        };
-        //  start new thread
-        new Thread(task).start();
+        //  populate tableview with new Track instances        
+        populate.populateTable(files.getTracksDir().getPath());
+              
         
     } 
     
