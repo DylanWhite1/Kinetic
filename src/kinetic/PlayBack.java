@@ -413,6 +413,8 @@ public class PlayBack {
         
         // when media player is finished play next track        
         mediaplayer.setOnEndOfMedia(() -> {
+            mediaplayer.dispose();
+            
             // select next in tableview
             selectionModel.clearAndSelect(selectionModel.getSelectedIndex() + 1);
             
