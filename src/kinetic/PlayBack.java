@@ -687,8 +687,6 @@ public class PlayBack {
     
     private static String formatDuration(Duration aDuration){
         
-        String timer;
-        
         // use decimal format
         DecimalFormat formatter = new DecimalFormat("00"); 
         
