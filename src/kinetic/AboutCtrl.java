@@ -33,7 +33,6 @@ public class AboutCtrl implements Initializable {
                 + "Author: Dylan White\n\n"
                 + "email: dwhite2209@yahoo.co.uk\n\n");        
         
-    }
-    
+    }    
     
 }
