@@ -29,12 +29,9 @@ import org.apache.commons.io.FileUtils;
 
 public class Import {
        
-    private final Files files;
+    private final Files files;   
     
-    private final Populate populate;
-    
-    public Import(){
-        this.populate = new Populate();
+    public Import(){        
         this.files = new Files();
     }
     
