@@ -88,6 +88,12 @@ public class PlayBack {
         
         if (event.isPrimaryButtonDown() && event.getClickCount() == 2) {
             
+            if (mediaplayer != null){
+                
+                mediaplayer.dispose();
+                
+            }
+            
             // set table id to current selected id tablecolumn
             setTableId(selectionModel); 
             
@@ -125,6 +131,12 @@ public class PlayBack {
             // handler - if left mouse button clicked listen for play button
             ButtonInstance.getInstance().currentButton().getPlayBt().setOnAction(
                     (ActionEvent e) -> {
+                
+                if (mediaplayer != null) {
+                
+                    mediaplayer.dispose();
+                
+                }
                 
                 // play current track and continue playing the next in table        
                 play(currentTime, songLabel, slider, filepath, selectionModel);    
