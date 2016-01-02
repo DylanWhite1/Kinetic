@@ -240,6 +240,12 @@ public class PlayBack {
         TableViewInstance.getInstance().currentTableView().getTableview()
             .setOnMousePressed((MouseEvent event) -> {
                 
+                if (mediaplayer != null) {
+                
+                    mediaplayer.dispose();
+                
+                }
+                
                 doubleClick(slider, currentTime, songLabel, filepath, selectionModel, event);
                 singleClick(slider, currentTime, songLabel, filepath, selectionModel, event);         
                 rightClick(event);      
@@ -425,7 +431,12 @@ public class PlayBack {
         
         // when media player is finished play next track        
         mediaplayer.setOnEndOfMedia(() -> {
-            mediaplayer.dispose();
+            
+            if (mediaplayer != null) {
+                
+                mediaplayer.dispose();
+                
+            }
             
             // select next in tableview
             selectionModel.clearAndSelect(selectionModel.getSelectedIndex() + 1);
