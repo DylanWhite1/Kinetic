@@ -506,6 +506,8 @@ public class PlayBack {
                 // prevents multiple tracks from playing at once
                 mediaplayer.stop();
                 
+                mediaplayer.dispose();
+                
             }
             
             // set media player to mp3 file that needs to be played
@@ -538,7 +540,9 @@ public class PlayBack {
         
         ButtonInstance.getInstance().currentButton().getStopBt().setOnAction((ActionEvent e) -> {
             
-                mediaplayer.stop();                
+                mediaplayer.stop();  
+                mediaplayer.dispose();
+                
                 ButtonInstance.getInstance().currentButton().getStopBt().setSelected(false);
                 
         });
